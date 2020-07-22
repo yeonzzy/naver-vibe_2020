@@ -1171,11 +1171,12 @@
                     <a href="#none"></a>
                 </div>
                 <div class="volume">
+                    <div class="volumeIcon"></div>
                     <div class="volumeBar"></div>
                 </div>
                 <div class="songTime">
                     <span class="nowTime">00:00</span>
-                    <span class="totalTime">03:00</span>
+                    <span class="totalTime">00:00</span>
                 </div>
             </div>
         </div>
@@ -1228,9 +1229,7 @@
                 playerInfo.find('img').attr('src', playerBg3);
 
             }
-
-
-
+            //span.play를 클릭 시 playerBar 초기화 된 후 다시 진행.
             let resetBar = 0;
             let playKey = 0;
 
@@ -1283,6 +1282,16 @@
                     $('.playerBar').animate({
                         width: '100%'
                     }, 30000);
+                    $('.volumeBar').css({
+                        background: '#bcbcbc'
+                    });
+                    $('.volumeIcon').css({
+                        background: 'url(img/commons/player/player_volume-icon.png) no-repeat',
+                        backgroundSize: '17px',
+                        backgroundPosition: 'center',
+                        margin: '13px 0 0px 19px'
+                    });
+                    $('.songTime span.totalTime').text('01:00');
                     $('.playerLogin-pop').fadeIn();
 
                     playKey++;
@@ -1306,6 +1315,41 @@
             $('span.player-close').on('click', function() {
                 $('.playerLogin-pop').fadeOut(100);
             });
+
+            //volumeIcon 클릭 시 이미지 교체
+            var volkey=0;
+            $('.volumeIcon').on('click', volOnOffFunc);
+            function volOnOffFunc(){
+                //볼륨활성화 상태일 때 == ON
+                if(volkey==0){
+                    $('.volumeIcon').css({
+                        background: 'url(img/commons/player/player_volume-icon.png) no-repeat',
+                        backgroundSize: '17px',
+                        backgroundPosition: 'center',
+                        margin: '13px 0 0px 19px'
+                    });
+                    $('.volumeBar').css({
+                        background: '#bcbcbc'
+                    });
+                    volkey++;
+                //볼륨 비활성화 상태일 때 == OFF
+                }else if(volkey==1){
+                    $('.volumeIcon').css({
+                        background: 'url(img/commons/player/player_volume-none-icon.png) no-repeat',
+                        backgroundSize: '18px',
+                        backgroundPosition: 'center',
+                        margin: '13px 0 0px 20px'
+                    });
+                    $('.volumeBar').css({
+                        background: 'rgba(25,25,25,0.97)'
+                    });
+                    volkey=0;
+                }
+            }
+
+
+
+
         </script>
 
         <!--login 부분!!!!!!!!!!!!!!!!-->
