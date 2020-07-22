@@ -1,0 +1,412 @@
+@charset "utf-8";
+
+.header{
+    width: 225px;
+    height: 100%;
+    position: fixed;
+    z-index: 5;
+}
+
+/*header top!!*/
+.header .inner-header{
+    width: 225px;
+    height: 70px;
+    background: #000;
+}
+
+.header .inner-header::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.header .inner-header h1.logo{
+    width: 140px;
+    height: auto;
+    float: left;
+}
+
+.header .inner-header h1.logo img{
+    width: 110px;
+    height: auto;
+    display: block;
+    margin: 25px 0 25px 20px;
+}
+
+.header .inner-header .search{
+    width: 20px;
+    height: 20px;
+    float: right;
+    cursor: pointer;
+    background: url(../../img/commons/header/top-header_search.png) no-repeat;
+    background-size: 18px;
+    background-position: center;
+    padding: 25px;
+}
+
+.header .inner-header .search:hover{
+    cursor: pointer;
+    background: url(../../img/commons/header/top-header_search-h.png) no-repeat;
+    background-size: 18px;
+    background-position: center;
+}
+
+.header .inner-header .search-bar{
+    position: fixed;
+    top: -100%;
+    right: 0;
+    left: 225px;
+    height: 70px;
+    background: #fff;
+    padding: 10px 30px;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.header .inner-header .search-bar input{
+    border-radius: 10px;
+    border: 0;
+    height: 100%;
+    width: 100%;
+    background: url(../../img/commons/header/top-header_search-bar.png) no-repeat;
+    background-size: 20px;
+    background-position: 10px center;
+    padding-left: 40px;
+    outline-color:dodgerblue;
+    box-sizing: border-box;
+}
+
+.header .inner-header .search-bar input:focus{
+    color: #ff0050;
+}
+
+.header .inner-header .search-bar span.close{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    display: block;
+    top: 25px;
+    right: 50px;
+    bottom: 0;
+    cursor: pointer;
+    background: url(../../img/commons/header/top-header_search-bar_close.png) no-repeat;
+    background-size: 20px;
+}
+
+.header .inner-header .menu{
+    width: 58px;
+    height: auto;
+    float: right;
+    display: none;
+}
+
+.header .inner-header .menu img{
+    width: 25px;
+    height: 18px;
+    display: block;
+    margin: 26px auto;
+    cursor: pointer;
+}
+
+/*header : login ~ subMenu*/
+.header .side-bar{
+    width: 225px;
+    height: 100%;
+    background: #000;    
+}
+
+/*header login!!*/
+.header .side-bar .login{
+    width: 200px;
+    height: 50px;
+    border-top: 1px solid #1c1c1c;
+    border-bottom: 1px solid #1c1c1c;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.header .side-bar .login span.login-icon{
+    width: 30px;
+    height: 30px;
+    display: block;
+    float: left;
+}
+
+.header .side-bar .login span.login-icon img{
+    width: 30px;
+    height: auto;
+    display: block;
+}
+
+.header .side-bar .login span.login-txt{
+    font-size: 16px;
+    line-height: 30px;
+    display: block;
+    float: left;
+    margin-left: 10px;
+}
+
+.header .side-bar .login span.login-txt a{
+    color: #999;
+}
+
+/*header middle!!*/
+.header .side-bar .m-header{
+    width: 100%;
+    height: auto;
+}
+
+.header .side-bar .m-header .gnb{
+    width: 200px;
+    height: auto;
+    margin: 0 auto;
+    padding: 30px 0;
+    border-bottom: 1px solid #1c1c1c;
+}
+
+.header .side-bar .m-header .gnb>ul>li{
+    line-height: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.header .side-bar .m-header .gnb>ul>li a{
+    display: block;
+}
+
+.header .side-bar .m-header .gnb>ul>li.gnbToday::before{
+    width: 20px;
+    height: 20px;
+    display: block;
+    float: left;
+    background: url(../../img/commons/header/header-gnb-today-s.png) no-repeat;
+    background-size: 20px;
+    content: "";
+    cursor: pointer;
+}
+
+.header .side-bar .m-header .gnb>ul>li img{
+    width: 20px;
+    height: 20px;
+    display: block;
+    float: left;
+}
+
+.header .side-bar .m-header .gnb>ul>li span{
+    display: block;
+    text-indent: 10px;
+    color: #ccc;
+}
+
+.header .side-bar .m-header .gnb>ul>li span.gnbChoice{
+    color: #ff0050;
+    text-indent: 10px;
+    font-weight: bold;
+}
+
+/*header bottom!!*/
+.header .side-bar .b-header{
+    width: 100%;
+    height: auto;
+}
+
+.header .side-bar .b-header .subMenu{
+    width: 200px;
+    height: auto;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.header .side-bar .b-header .subMenu>ul>li{
+    line-height: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.header .side-bar .b-header .subMenu>ul>li a{
+    color: #ccc;
+}
+
+.header .side-bar .b-header .subMenu>ul>li a:hover{
+    color: #fff;
+}
+
+.header .side-bar .b-header .subMenu>ul>li.subPoint{
+    line-height: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-weight: bold;
+    font-family: 'Noto Sans', sans-serif;
+/*    font-family: 'Black Han Sans', sans-serif;*/
+    font-size: 16px;
+}
+
+
+/*반응형 모바일 메뉴!!!!!!!!!!!!!!!!*/
+.header .rwdMenu{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: #000;
+    z-index: 99;
+    display: none;
+    overflow-y: scroll;
+}
+
+.header .rwdMenu span.rwdMenu-close{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.header .rwdMenu span.rwdMenu-close img{
+    width: 18px;
+    height: 18px;
+}
+
+.header .rwdMenu .inner-rwdMenu{
+    width: 100%;
+    height: auto;
+    padding: 50px 30px;
+    box-sizing: border-box;
+}
+
+.header .rwdMenu .inner-rwdMenu ul li{
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.header .rwdMenu .inner-rwdMenu .rwd-tMenu{
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    padding-bottom: 20px;
+}
+
+.header .rwdMenu .inner-rwdMenu .rwd-tMenu ul li a{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.header .rwdMenu .inner-rwdMenu .rwd-tMenu >ul >li.rToday::before{
+    width: 30px;
+    height: 30px;
+    display: block;
+    float: left;
+    background: url(../../img/commons/header/header-gnb-today-s.png) no-repeat;
+    background-size: 22px;
+    content: "";
+    cursor: pointer;
+    background-position: center;
+}
+
+.header .rwdMenu .inner-rwdMenu .rwd-tMenu >ul >li.rToday >a{
+    color: #ff0050;
+    font-weight: bold;
+    
+}
+
+.header .rwdMenu .inner-rwdMenu .rwd-tMenu ul li a{
+    color: #fff;
+    opacity: 0.9;
+    text-indent: 10px;
+    font-size: 22px;
+    font-family: "Nanum Square", sans-serif !important;
+}
+
+.header .rwdMenu .inner-rwdMenu .rwd-tMenu >ul >li.rChart::before{
+    width: 30px;
+    height: 30px;
+    display: block;
+    float: left;
+    background: url(../../img/commons/header/header-gnb-chart.png) no-repeat;
+    background-size: 22px;
+    content: "";
+    cursor: pointer;
+    background-position: center;
+}
+
+.header .rwdMenu .inner-rwdMenu .rwd-tMenu >ul >li.rDj::before{
+    width: 30px;
+    height: 30px;
+    display: block;
+    float: left;
+    background: url(../../img/commons/header/header-gnb-dj.png) no-repeat;
+    background-size: 22px;
+    content: "";
+    cursor: pointer;
+    background-position: center;
+}
+
+.header .rwdMenu .inner-rwdMenu .rwd-tMenu >ul >li.rMag::before{
+    width: 30px;
+    height: 30px;
+    display: block;
+    float: left;
+    background: url(../../img/commons/header/header-gnb-mag.png) no-repeat;
+    background-size: 22px;
+    content: "";
+    cursor: pointer;
+    background-position: center;
+}
+
+.header .rwdMenu .inner-rwdMenu .rwd-tMenu >ul >li.rSong::before{
+    width: 30px;
+    height: 30px;
+    display: block;
+    float: left;
+    background: url(../../img/commons/header/header-gnb-song.png) no-repeat;
+    background-size: 22px;
+    content: "";
+    cursor: pointer;
+    background-position: center;
+}
+
+.header .rwdMenu .inner-rwdMenu .rwd-mMenu{
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    padding: 10px 0;
+}
+
+.header .rwdMenu .inner-rwdMenu .rwd-mMenu ul li{
+    padding: 10px;
+    box-sizing: border-box;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.header .rwdMenu .inner-rwdMenu .rwd-mMenu ul li a{
+    color: #fff;
+    opacity: 0.9;
+}
+
+.header .rwdMenu .inner-rwdMenu .rwd-bMenu{
+    width: 100%;
+    height: auto;
+    padding: 20px 0 0 0;
+}
+
+.header .rwdMenu .inner-rwdMenu .rwd-bMenu ul li{
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.header .rwdMenu .inner-rwdMenu .rwd-bMenu ul li a{
+    color: #fff;
+    opacity: 0.7;
+}
+
+
+
+
+
+
