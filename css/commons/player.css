@@ -318,23 +318,31 @@
     margin: 17.5px 0;
 }
 
+.player .inner-player .volume::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.player .inner-player .volume .volumeIcon{
+    width:20px;
+    height: 20px;
+    float: left;
+    background: url(../../img/commons/player/player_volume-none-icon.png) no-repeat;
+    background-size: 18px;
+    background-position: center;
+    cursor: pointer;
+    margin: 13px 0 0px 20px; 
+}
+
 .player .inner-player .volume .volumeBar{
     width: 100px;
     height: 5px;
-    background: #bcbcbc;
+    background: rgba(25,25,25,0.97);
     border-radius: 10px;
     float: right;
-    margin: 20px 20px 20px 0;
+    margin: 20px 20px 20px 0;  
 }
 
-.player .inner-player .volume::before{
-    content: "";
-    background: url(../../img/commons/player/player_volume-icon.png) no-repeat;
-    background-size: 17px;
-    width: 20px;
-    height: 20px;
-    display: inline-block;
-    background-position: center;
-    margin: 12.5px 5px 0 20px;
-}
+
 
