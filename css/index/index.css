@@ -1,0 +1,1229 @@
+@charset "utf-8";
+@import url(../commons/header.css);
+@import url(../commons/footer.css);
+@import url(../commons/player.css);
+@import url(../login/login.css);
+@import url(../join/join.css);
+/*@import url(../commons/media.css);*/
+
+#wrap{
+    width: 100%;
+    height: auto;
+/*    overflow: hidden;*/
+}
+.contents{
+    height: auto;
+    width: 100%;
+    padding-left: 225px;
+    box-sizing: border-box;
+}
+
+/*nav!!!!!!!!!!!!!!!!!!*/
+.contents .nav{
+    width: 100%;
+    height: auto;
+    padding:50px 0;
+    box-sizing: border-box;
+    background: #f2f2f2;
+}
+
+.contents .nav .inner-nav{
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    background: #fff;
+}
+
+.contents .nav .inner-nav::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.contents .nav .inner-nav .navThumbnail{
+    width: 30%;
+    float: left;
+    height: 320px;
+    background: url(../../img/index/nav-thumbnail.png) no-repeat 50%;
+    background-size: cover;
+}
+
+.contents .nav .inner-nav .navThumbnail a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.contents .nav .inner-nav .navThumbnail a:hover{
+     background: linear-gradient(to bottom, #fff0 70%, #0007) !important;
+}
+
+.contents .nav .inner-nav .navInfo{
+    width: 70%;
+    height: auto;
+    padding: 58px 50px;
+    float: left;
+    box-sizing: border-box;
+    padding: 58px 50px;
+}
+
+.contents .nav .inner-nav .navInfo >ul >li{
+    width: 100%;
+    height: auto;
+}
+
+.contents .nav .inner-nav .navInfo >ul >li img{
+    width: 77px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.contents .nav .inner-nav .navInfo >ul >li.infoTxt{
+    height: 40px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+/*    -webkit-line-clamp: 2;*/
+    font-size: 14px;
+    margin-top: 10px;
+    color: #939393;
+}
+
+.contents .nav .inner-nav .navInfo >ul >li.infoTxt >a{
+    color: #939393;
+}
+
+.contents .nav .inner-nav .navInfo >ul >li span{
+    color: #939393;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.contents .nav .inner-nav .navInfo >ul >li span.circle{
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    display: inline-block;
+    background: #939393;
+    vertical-align: middle;
+}
+
+/*vibe mag!!!!!!!!!!!!!!!!!!*/
+.contents .section1-Mag{
+    width: auto;
+    height: auto;
+    background: #fff;
+    padding: 35px 0 20px 0;
+    box-sizing: border-box; 
+}
+
+.contents .section1-Mag .inner-sec1Mag{
+    width: auto;
+    max-width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    padding-bottom: 35px;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.contents .section1-Mag .inner-sec1Mag h3{
+    font-size: 16px;
+    line-height: 40px;
+    color: #232323;
+    text-indent: 5px;
+}
+
+.contents .section1-Mag .inner-sec1Mag h3:hover{
+    text-decoration: underline;
+}
+
+.contents .section1-Mag .inner-sec1Mag h3::after{
+    background: url(../../img/index/section-title-arrow.png) no-repeat;
+    background-size: 10px;
+    background-position: 10px 1px;
+    content: "";
+    width: 20px;
+    height: 21px;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+/*vibe mag Slide!!!!!!!!!!!!!!!!!!*/
+.magBanner{
+    width: 100%;
+    height: auto;
+}
+
+.magBanner .inner-magBanner{
+    width: 100%;
+    max-width: 1200px;
+    height: 370px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.magBanner .inner-magBanner span.magArrow{
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    background: #fff;
+    top: 135px;
+    border-radius: 50%;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.2);
+    cursor: pointer;
+}
+
+.magBanner .inner-magBanner span.magArrow.left{
+    left: -15px;
+    display: none;
+}
+
+.magBanner .inner-magBanner span.magArrow.left img{
+    width: 15px;
+    height: 15px;
+    display: block;
+    margin: 10px auto 0;
+}
+
+.magBanner .inner-magBanner span.magArrow.right{
+    right: -15px;
+    display: block;
+}
+
+.magBanner .inner-magBanner span.magArrow.right img{
+    width: 15px;
+    height: 15px;
+    display: block;
+    margin: 10px auto 0;
+}
+
+.magBanner .inner-magBanner .magBanner-parent{
+    width: 100%;
+    height: 370px;
+    position: absolute;
+    overflow: hidden;
+}
+
+.magBanner .inner-magBanner .magBanner-parent .magBanner-con{
+    width: 300%;
+    height: 370px;
+    position: absolute;
+}
+
+.magBanner .inner-magBanner .magBanner-parent .magBanner-con >ul >li{
+    width: 33.3333%;
+    height: 370px;
+    float: left;
+}
+
+.magBanner .inner-magBanner .magBanner-parent .magBanner-con >ul >li .magSub::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.magBanner .inner-magBanner .magBanner-parent .magBanner-con >ul >li .magSub>ul>li{
+    width: 25%;
+    height: 290px;
+    float: left;
+    padding: 0 5px;
+    box-sizing: border-box;
+}
+
+.magBanner .inner-magBanner .magBanner-parent .magBanner-con >ul >li .magSub>ul>li .magAlbum{
+    width: 100%;
+    height: 290px;
+    position: relative;
+}
+
+.magBanner .inner-magBanner .magBanner-parent .magBanner-con >ul >li .magSub>ul>li >a{
+    font-size: 16px;
+    padding: 10px 0 0 0;
+    display: block;
+}
+
+.magBanner .inner-magBanner .magBanner-parent .magBanner-con >ul >li .magSub>ul>li >a:hover{
+    text-decoration: underline;
+}
+
+.magBanner .inner-magBanner .magBanner-parent .magBanner-con >ul >li .magSub>ul>li p{
+    font-size: 13px;
+    color: #999;
+    line-height: 20px;
+}
+
+.magBanner .inner-magBanner .magBanner-parent .magBanner-con >ul >li .magSub>ul>li.update p{
+    vertical-align: top;
+}
+
+.magBanner .inner-magBanner .magBanner-parent .magBanner-con >ul >li .magSub>ul>li.update p::after{
+    width: 8px;
+    height: 8px;
+    background: #ff0050;
+    border-radius: 50%;
+    display: inline-block;
+    content: "";
+    margin-left: 8px;
+}
+
+.magBanner .inner-magBanner .magBanner-parent .magBanner-con >ul >li .magSub>ul>li .magAlbum a.magLink{
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+}
+
+/*vibe mag Hover!!!!!!!!!!!!!!!!!!*/
+.magBanner .inner-magBanner .magBanner-parent .magBanner-con >ul >li .magSub>ul>li .magAlbum span.play{
+    width: 42px;
+    height: 42px;
+    background: #fff8;
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    display: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.magBanner .inner-magBanner .magBanner-parent .magBanner-con >ul >li .magSub>ul>li .magAlbum span.play::after{
+    background: url(../../img/index/section-album-play.png) no-repeat;
+    background-size: 12px;
+    content: "";
+    display: inline-block;
+    background-position: 17px 14px;
+    width: 42px;
+    height: 42px;
+}
+
+.magBanner .inner-magBanner .magBanner-parent .magBanner-con >ul >li .magSub>ul>li .magAlbum span.more{
+    width: 42px;
+    height: 10px;
+    position: absolute;
+    right: 0;
+    bottom: 25px;
+    display: none;
+    cursor: pointer;
+}
+
+.magBanner .inner-magBanner .magBanner-parent .magBanner-con >ul >li .magSub>ul>li .magAlbum span.more::after{
+    background: url(../../img/index/sec1-mag-h.png) no-repeat;
+    background-size: 25px;
+    content: "";
+    display: inline-block;
+    background-position: 5px;
+    width: 40px;
+    height: 12px;
+}
+
+.magBanner .inner-magBanner .magBanner-parent .magBanner-con >ul >li .magSub>ul>li .magAlbum span:hover{
+    transition: all 0.5s;
+}
+
+
+/*news!!!!!!!!!!!!!!!!!!*/
+.contents .section2-news{
+    width: auto;
+    height: auto;
+    background: #fff;
+    box-sizing: border-box;
+}
+
+.contents .section2-news .inner-sec2News{
+    width: auto;
+    max-width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    padding-bottom: 35px;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.contents .section2-news .inner-sec2News h3{
+    font-size: 16px;
+    line-height: 40px;
+    color: #232323;
+    text-indent: 5px;
+}
+
+.contents .section2-news .inner-sec2News h3:hover{
+    text-decoration: underline;
+}
+
+
+/*news Slide!!!!!!!!!!!!!!!!!!*/
+.newsBanner{
+    width: 100%;
+    height: auto;
+}
+
+.newsBanner .inner-newsBanner{
+    width: 100%;
+    max-width: 1200px;
+    height: 260px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.newsBanner .inner-newsBanner span.newsArrow{
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    background: #fff;
+    top: 70px;
+    border-radius: 50%;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.2);
+    cursor: pointer;
+}
+
+.newsBanner .inner-newsBanner span.newsArrow.left{
+    left: -15px;
+    display: none;
+}
+
+.newsBanner .inner-newsBanner span.newsArrow.left img{
+    width: 15px;
+    height: 15px;
+    display: block;
+    margin: 10px auto 0;
+}
+
+.newsBanner .inner-newsBanner span.newsArrow.right{
+    right: -15px;
+    display: block;
+}
+
+.newsBanner .inner-newsBanner span.newsArrow.right img{
+    width: 15px;
+    height: 15px;
+    display: block;
+    margin: 10px auto 0;
+}
+
+.newsBanner .inner-newsBanner .newsBanner-parent{
+    width: 100%;
+    height: 260px;
+    position: absolute;
+    overflow: hidden;
+}
+
+.newsBanner .inner-newsBanner .newsBanner-parent .newsBanner-con{
+    width: 300%;
+    height: 260px;
+    position: absolute;
+}
+
+.newsBanner .inner-newsBanner .newsBanner-parent .newsBanner-con >ul >li{
+    width: 33.3333%;
+    height: 260px;
+    float: left;
+}
+
+.newsBanner .inner-newsBanner .newsBanner-parent .newsBanner-con >ul >li .newsSub::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.newsBanner .inner-newsBanner .newsBanner-parent .newsBanner-con >ul >li .newsSub>ul>li{
+    width: 33.3333%;
+    height: 260px;
+    float: left;
+    padding: 0 5px;
+    box-sizing: border-box;
+}
+
+.newsBanner .inner-newsBanner .newsBanner-parent .newsBanner-con >ul >li .newsSub>ul>li .newsImg{
+    width: 100%;
+    height: 182px;
+    position: relative;
+}
+
+.newsBanner .inner-newsBanner .newsBanner-parent .newsBanner-con >ul >li .newsSub>ul>li >a{
+    font-size: 16px;
+    padding: 10px 0 0 0;
+    display: block;
+}
+
+.newsBanner .inner-newsBanner .newsBanner-parent .newsBanner-con >ul >li .newsSub>ul>li >a:hover{
+    text-decoration: underline;
+}
+
+.newsBanner .inner-newsBanner .newsBanner-parent .newsBanner-con >ul >li .newsSub>ul>li p{
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.newsBanner .inner-newsBanner .newsBanner-parent .newsBanner-con >ul >li .newsSub>ul>li p a.newsMore{
+    color: #999;
+}
+
+.newsBanner .inner-newsBanner .newsBanner-parent .newsBanner-con >ul >li .newsSub>ul>li .newsImg a.newsLink{
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+}
+
+/*news Slide Hover!!!!!!!!!!!!!!!!!!*/
+.newsBanner .inner-newsBanner .newsBanner-parent .newsBanner-con >ul >li .newsSub>ul>li .newsImg span.play{
+    width: 42px;
+    height: 42px;
+    background: #fff8;
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    display: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.newsBanner .inner-newsBanner .newsBanner-parent .newsBanner-con >ul >li .newsSub>ul>li .newsImg span.play::after{
+    background: url(../../img/index/section-album-play.png) no-repeat;
+    background-size: 12px;
+    content: "";
+    display: inline-block;
+    background-position: 17px 14px;
+    width: 42px;
+    height: 42px;
+}
+
+.newsBanner .inner-newsBanner .newsBanner-parent .newsBanner-con >ul >li .newsSub>ul>li .newsImg span.more{
+    width: 42px;
+    height: 10px;
+    position: absolute;
+    right: 0;
+    bottom: 25px;
+    display: none;
+    cursor: pointer;
+}
+
+.newsBanner .inner-newsBanner .newsBanner-parent .newsBanner-con >ul >li .newsSub>ul>li .newsImg span.more::after{
+    background: url(../../img/index/sec1-mag-h.png) no-repeat;
+    background-size: 25px;
+    content: "";
+    display: inline-block;
+    background-position: 5px;
+    width: 40px;
+    height: 12px;
+}
+
+.newsBanner .inner-newsBanner .newsBanner-parent .newsBanner-con >ul >li .newsSub>ul>li .newsImg span:hover{
+    transition: all 0.5s;
+}
+
+
+/*song!!!!!!!!!!!!!!!!!!*/
+.contents .section3-song{
+    width: auto;
+    height: 500px;
+    background: #fff;
+    box-sizing: border-box;
+    padding: 20px 0 40px 0;
+
+}
+
+.contents .section3-song .inner-sec3Song{
+    width: auto;
+    max-width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    padding-bottom: 35px;
+}
+
+.contents .section3-song .inner-sec3Song h3{
+    font-size: 16px;
+    line-height: 40px;
+    color: #232323;
+    text-indent: 5px;
+}
+
+.contents .section3-song .inner-sec3Song h3:hover{
+    text-decoration: underline;
+}
+
+.contents .section3-song .inner-sec3Song h3::after{
+    background: url(../../img/index/section-title-arrow.png) no-repeat;
+    background-size: 10px;
+    background-position: 10px 1px;
+    content: "";
+    width: 20px;
+    height: 21px;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+/*song Slide!!!!!!!!!!!!!!!!!!*/
+.songBanner{
+    width: 100%;
+    height: auto;
+}
+
+.songBanner .inner-songBanner{
+    width: 100%;
+    max-width: 1200px;
+    height: 370px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.songBanner .inner-songBanner span.songArrow{
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    background: #fff;
+    top: 135px;
+    border-radius: 50%;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.2);
+    cursor: pointer;
+}
+
+.songBanner .inner-songBanner span.songArrow.left{
+    left: -15px;
+    display: none;
+}
+
+.songBanner .inner-songBanner span.songArrow.left img{
+    width: 15px;
+    height: 15px;
+    display: block;
+    margin: 10px auto 0;
+}
+
+.songBanner .inner-songBanner span.songArrow.right{
+    right: -15px;
+    display: block;
+}
+
+.songBanner .inner-songBanner span.songArrow.right img{
+    width: 15px;
+    height: 15px;
+    display: block;
+    margin: 10px auto 0;
+}
+
+.songBanner .inner-songBanner .songBanner-parent{
+    width: 100%;
+    height: 370px;
+    position: absolute;
+    overflow: hidden;
+}
+
+.songBanner .inner-songBanner .songBanner-parent .songBanner-con{
+    width: 300%;
+    height: 370px;
+    position: absolute;
+}
+
+.songBanner .inner-songBanner .songBanner-parent .songBanner-con >ul >li{
+    width: 33.3333%;
+    height: 370px;
+    float: left;
+}
+
+.songBanner .inner-songBanner .songBanner-parent .songBanner-con >ul >li .songSub::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.songBanner .inner-songBanner .songBanner-parent .songBanner-con >ul >li .songSub>ul>li{
+    width: 25%;
+    height: 370px;
+    float: left;
+    padding: 0 5px;
+    box-sizing: border-box;
+}
+
+.songBanner .inner-songBanner .songBanner-parent .songBanner-con >ul >li .songSub>ul>li .songAlbum{
+    width: 100%;
+    height: 290px;
+    position: relative;
+}
+
+.songBanner .inner-songBanner .songBanner-parent .songBanner-con >ul >li .songSub>ul>li >a{
+    font-size: 16px;
+    padding: 10px 0 0 0;
+    display: block;
+}
+
+.songBanner .inner-songBanner .songBanner-parent .songBanner-con >ul >li .songSub>ul>li >a:hover{
+    text-decoration: underline;
+}
+
+.songBanner .inner-songBanner .songBanner-parent .songBanner-con >ul >li .songSub>ul>li a.update{
+    vertical-align: top;
+}
+
+.songBanner .inner-songBanner .songBanner-parent .songBanner-con >ul >li .songSub>ul>li a.update::after{
+    width: 8px;
+    height: 8px;
+    background: #ff0050;
+    border-radius: 50%;
+    display: inline-block;
+    content: "";
+    margin-left: 8px;
+}
+
+.songBanner .inner-songBanner .songBanner-parent .songBanner-con >ul >li .songSub>ul>li p{
+    font-size: 13px;
+    line-height: 20px;
+    color: #999;
+}
+
+
+.songBanner .inner-songBanner .songBanner-parent .songBanner-con >ul >li .songSub>ul>li .songAlbum a.songLink{
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+}
+
+/*news Slide Hover!!!!!!!!!!!!!!!!!!*/
+.songBanner .inner-songBanner .songBanner-parent .songBanner-con >ul >li .songSub>ul>li .songAlbum span.play{
+    width: 42px;
+    height: 42px;
+    background: #fff8;
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    display: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.songBanner .inner-songBanner .songBanner-parent .songBanner-con >ul >li .songSub>ul>li .songAlbum span.play::after{
+    background: url(../../img/index/section-album-play.png) no-repeat;
+    background-size: 12px;
+    content: "";
+    display: inline-block;
+    background-position: 17px 14px;
+    width: 42px;
+    height: 42px;
+}
+
+.songBanner .inner-songBanner .songBanner-parent .songBanner-con >ul >li .songSub>ul>li .songAlbum span.more{
+    width: 42px;
+    height: 10px;
+    position: absolute;
+    right: 0;
+    bottom: 25px;
+    display: none;
+    cursor: pointer;
+}
+
+.songBanner .inner-songBanner .songBanner-parent .songBanner-con >ul >li .songSub>ul>li .songAlbum span.more::after{
+    background: url(../../img/index/sec1-mag-h.png) no-repeat;
+    background-size: 25px;
+    content: "";
+    display: inline-block;
+    background-position: 5px;
+    width: 40px;
+    height: 12px;
+}
+
+.songBanner .inner-songBanner .songBanner-parent .songBanner-con >ul >li .songSub>ul>li .songAlbum span:hover{
+    transition: all 0.5s;
+}
+
+
+/*section 4!!!!!!!!!!!!!!!!!!*/
+.contents .section4-app{
+    width: 100%;
+    height: 360px;
+}
+
+.contents .section4-app .inner-sec4App{
+    width: 100%;
+    max-width: 1200px;
+    height: 360px;
+    margin: 0 auto;
+    background: linear-gradient(100deg, #ff3a4e, #7e4cff);
+    text-align: center;
+}
+
+.contents .section4-app .inner-sec4App .tape{
+    width: 100%;
+    height: auto;
+}
+
+.contents .section4-app .inner-sec4App .tape img{
+    width: 105px;
+    height: 65px;
+    display: block;
+    margin: 0 auto;
+    padding: 75px 0 0 0;
+}
+
+.contents .section4-app .inner-sec4App h2{
+    color: #fff;
+    line-height: 28px;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+}
+
+.contents .section4-app .inner-sec4App p{
+    color: rgba(255,255,255,0.75);
+    line-height: 28px;
+    font-size: 14px;
+}
+
+.contents .section4-app .inner-sec4App .phoenApp{
+    width: 100%;
+    max-width: 370px;
+    height: auto;
+    margin: 25px auto 0;
+}
+
+.contents .section4-app .inner-sec4App a.appStore img{
+    width: 180px;
+    height: 54px;
+    float: left;
+    display: block;
+    margin: 0 auto;
+    padding-right: 10px;
+}
+
+.contents .section4-app .inner-sec4App a.googlePlay img{
+    width: 180px;
+    height: 54px;
+    float: left;
+    display: block;
+    margin: 0 auto;
+}
+
+/*section 5!!!!!!!!!!!!!!!!!!*/
+.contents .section5-intro{
+    width: 100%;
+    height: auto;
+}
+
+.contents .section5-intro .inner-sec5Intro{
+    width: 100%;
+    max-width: 1700px;
+    height: 650px;
+    text-align: center;
+    padding: 100px 0 0 0;
+    margin: 0 auto;
+}
+
+.contents .section5-intro .inner-sec5Intro h1{
+    font-size: 28px;
+    line-height: 38px;
+}
+
+.contents .section5-intro .isnner-sec5Intro P{
+    color: #939393;
+    font-size: 14px;
+    line-height: 22px;
+    margin: 10px 0 0 0;
+}
+
+.contents .section5-intro .inner-sec5Intro .playList{
+    width: 100%;
+    height: 300px;
+    margin: 50px 0 0 0;
+    background: url(../../img/index/sec5-intro.png) no-repeat 50%;
+    background-size: 2500px;
+}
+
+
+@media only screen and (min-width:768px) and (max-width:1024px){
+    .contents .nav{
+        padding: 0;
+    }
+    .contents .nav .inner-nav .navThumbnail{
+        width: 100%;
+        height: 375px;
+        background: url(../../img/index/nav-thumbnail.png) no-repeat;
+        background-size: cover;
+    }
+    .contents .nav .inner-nav .navInfo{
+        position: absolute;
+        height: 375px;
+        padding: 58px 0 58px 50px;
+        box-sizing: border-box;
+    }
+    .contents .nav .inner-nav .navInfo >ul >li img{
+        position: absolute;
+        bottom: 120px;
+        margin: 0;
+    }
+    .contents .nav .inner-nav .navInfo >ul >li >h1 a{
+        position: absolute;
+        bottom: 20px;
+        color: #fff;
+    }
+    .contents .nav .inner-nav .navInfo >ul >li.infoTxt{
+        display: none;
+    }
+    .contents .nav .inner-nav .navInfo >ul >li >span{
+        display: none;
+    }
+    .contents .nav .inner-nav .navInfo >ul >li span.circle{
+        display: none;
+    }
+    
+    .magBanner .inner-magBanner{
+        overflow: hidden;
+    }
+    .magBanner .inner-magBanner .magBanner-parent{
+        width: 200%;
+        height: 450px;
+        position: absolute;
+        overflow: hidden;
+    }
+    .magBanner .inner-magBanner span.magArrow.left{
+        left: 20px;
+        display: none;
+    }
+    .magBanner .inner-magBanner span.magArrow.right{
+        right: 20px;
+        display: block;
+    }
+    
+    .newsBanner .inner-newsBanner{
+        overflow: hidden;
+    }
+    .newsBanner .inner-newsBanner .newsBanner-parent{
+        width: 150%;
+        height: 450px;
+        position: absolute;
+        overflow: hidden;
+        }
+    .newsBanner .inner-newsBanner span.newsArrow.left{
+        left: 20px;
+        display: none;
+    }
+    .newsBanner .inner-newsBanner span.newsArrow.right{
+        right: 20px;
+        display: block;
+    }
+    
+    .songBanner .inner-songBanner{
+        overflow: hidden;
+    }
+    .songBanner .inner-songBanner .songBanner-parent{
+        width: 200%;
+        height: 450px;
+        position: absolute;
+        overflow: hidden;
+        }
+    .songBanner .inner-songBanner span.songArrow.left{
+        left: 20px;
+        display: none;
+    }
+    .songBanner .inner-songBanner span.songArrow.right{
+        right: 20px;
+        display: block;
+    }
+
+    .player .inner-player .songControl .control-area >a.shuffle{
+        display: none;
+    }
+    .player .inner-player .songControl .control-area >a.loop{
+        display: none;
+    }
+    .player .inner-player .songTime{
+        display: none;
+    }
+}
+
+@media only screen and (max-width:767px){
+    .header{
+        width: 100%;
+        height: 70px;
+        background: #000;
+    }
+    .header .inner-header{
+        width: 100%;
+    }
+    .header .inner-header .menu{
+        display: block;
+        width: 58px;
+        height: auto;
+    }
+    .header .inner-header .menu img{
+        width: 25px;
+        height: 18px;
+        display: block;
+        margin: 26px auto;
+    }
+    .header .inner-header .search{
+        width: 20px;
+        height: 20px;
+        float: right;
+        cursor: pointer;
+        background: url(../../img/commons/header/top-header_search-h.png) no-repeat;
+        background-size: 18px;
+        background-position: center;
+        padding: 25px 10px 25px 0;
+    }
+    .header .inner-header .search-bar{
+        position: fixed;
+        top: -100%;
+        left: 0;
+        height: 70px;
+        background: #000;
+        padding: 10px 10px;
+        box-sizing: border-box;
+    }
+    .header .inner-header .search-bar input{
+        border-radius: 10px;
+        border: 0;
+        height: 100%;
+        width: 100%;
+        background: url(../../img/commons/header/top-header-rwd-search-bar_h.png) no-repeat;
+        background-size: 20px;
+        background-position: 10px center;
+        padding-left: 40px;
+        outline-color:dodgerblue;
+        box-sizing: border-box;
+    }
+    .header .inner-header .search-bar span.close{
+        width: 15px;
+        height: 15px;
+        position: absolute;
+        display: block;
+        top: 27.5px;
+        right: 27.5px;
+        bottom: 0;
+        cursor: pointer;
+        background: url(../../img/commons/header/top-header-rwd-search-bar_close_h.png) no-repeat;
+        background-size: 15px;
+        background-position: center;
+}
+    .header .side-bar{
+        display: none;
+    }
+    
+    .contents{
+        padding: 0;
+    }
+    .contents .nav{
+        padding: 0;
+    }
+    .contents .nav .inner-nav .navThumbnail{
+        width: 100%;
+        height: 375px;
+        background: url(../../img/index/nav-thumbnail.png) no-repeat 50%;
+        background-size: cover;
+    }
+    .contents .nav .inner-nav .navInfo{
+        position: absolute;
+        height: 375px;
+        padding: 58px 0 58px 50px;
+        box-sizing: border-box;
+    }
+    .contents .nav .inner-nav .navInfo >ul >li img{
+        position: absolute;
+        bottom: 120px;
+        margin: 0;
+    }
+    .contents .nav .inner-nav .navInfo >ul >li >h1 a{
+        position: absolute;
+        bottom: 20px;
+        color: #fff;
+    }
+    .contents .nav .inner-nav .navInfo >ul >li.infoTxt{
+        display: none;
+    }
+    .contents .nav .inner-nav .navInfo >ul >li >span{
+        display: none;
+    }
+    .contents .nav .inner-nav .navInfo >ul >li span.circle{
+        display: none;
+    }
+    
+    .magBanner .inner-magBanner{
+        overflow: hidden;
+    }
+    .magBanner .inner-magBanner .magBanner-parent{
+        width: 200%;
+        height: 450px;
+        position: absolute;
+        overflow: hidden;
+        }
+    .magBanner .inner-magBanner span.magArrow.left{
+        left: 20px;
+        display: none;
+    }
+    .magBanner .inner-magBanner span.magArrow.right{
+        right: 20px;
+        display: block;
+    }
+    
+    .newsBanner .inner-newsBanner{
+        overflow: hidden;
+    }
+    .newsBanner .inner-newsBanner .newsBanner-parent{
+        width: 150%;
+        height: 450px;
+        position: absolute;
+        overflow: hidden;
+        }
+    .newsBanner .inner-newsBanner span.newsArrow.left{
+        left: 20px;
+        display: none;
+    }
+    .newsBanner .inner-newsBanner span.newsArrow.right{
+        right: 20px;
+        display: block;
+    }
+    
+    .songBanner .inner-songBanner{
+        overflow: hidden;
+    }
+    .songBanner .inner-songBanner .songBanner-parent{
+        width: 200%;
+        height: 450px;
+        position: absolute;
+        overflow: hidden;
+        }
+    .songBanner .inner-songBanner span.songArrow.left{
+        left: 20px;
+        display: none;
+    }
+    .songBanner .inner-songBanner span.songArrow.right{
+        right: 20px;
+        display: block;
+    }
+    
+    .player .inner-player .songControl .control-area >a.shuffle{
+        display: none;
+    }
+    .player .inner-player .songControl .control-area >a.loop{
+        display: none;
+    }
+    .player .inner-player .songTime{
+        display: none;
+    }
+    .player .inner-player .volume{
+        display: none;
+    }
+    .player .inner-player .songInfo >a.albumImg{
+        display: none;
+    }
+    .player .inner-player .songInfo{
+        width: auto;
+    }
+    .player .inner-player .songControl .control-area .control-btn{
+        position: fixed;
+        right: 0;
+        margin-right: 40px;
+    }
+    .player .inner-player .songControl .control-area .control-btn a{
+        width: 45px;
+        height: 45px;
+        display: block;
+        box-sizing: border-box;
+        padding: 7.5px;
+    }
+    .player .inner-player .playerList{
+        width: 50px;
+        height: 80px;
+        float: right;
+}    
+    
+    .footer{
+        padding-left: 0;
+    }
+    .footer .inner-foot .tFcon .notice{
+        padding: 15px 0 0 0;
+        width: auto;
+    }
+    .footer .inner-foot .tFcon .notice span{
+        float: none;
+    }
+    .footer .inner-foot .tFcon .notice .noticeTxt a{
+        text-indent: 3px;
+    }
+    .footer .inner-foot .tFcon .sns{
+        float: left;
+        height: 30px;
+        padding: 0 0 15px 0;
+    }
+    .footer .inner-foot .tFcon .sns>ul>li img{
+        margin: 2.5px auto;
+    }
+    .footer .inner-foot .bFcon .bFcon-info >ul>li{
+        font-size: 11px;
+    }
+    
+    .login-pop .inner-login{
+        width: 350px;
+        height: auto;
+        position: absolute;
+        left: 50%;
+        margin-left: -175px;
+        top: 50%;
+        margin-top: -200px;    
+    }
+    
+    .join-pop .inner-join{
+        width: 350px;
+        height: auto;
+        position: absolute;
+        right:-100%;
+        margin-right: -175px;
+        top: 50%;
+        margin-top: -315px;
+        padding: 20px 20px;
+    }
+    .join-pop .inner-join h1.joinTitle{
+        padding-bottom: 10px;
+    }
+    .join-pop .inner-join form >ul >li{
+        padding: 5px 0px;
+        box-sizing: border-box;
+    }
+    .join-pop .inner-join form >ul >li input[type=text],[type=password]{
+        height: 35px;
+    }
+    .join-pop .inner-join form >ul >li >a#userIdCheck{
+        height: 40px;
+    }
+    .join-pop .inner-join form >ul >li input[type=button]{
+        height: 40px;
+    }
+    .join-pop .inner-join form >ul >li.userPhone select{
+        width: 30.3333%;
+        height: 35px;
+    }
+    .join-pop .inner-join form >ul >li.userPhone input[type=text]{
+        height: 35px;
+    }
+    .join-pop .inner-join form >ul >li.userGender select{
+        height: 35px
+    }
+    .join-pop .inner-join form >ul >li.joinCheckBox{
+        color: #fff9;
+        font-size: 12px;
+        padding: 5px 0 0 0 ;
+    }
+    .join-pop .inner-join form >ul >li.joinCheckBox a{
+        font-size: 11px;
+    }
+    .joinCheckBox-con .inner-jCheckBox{
+        width: 350px;
+        height: auto;
+        position: absolute;
+        right:50%;
+        margin-right: -175px;
+        margin-bottom: -315px;
+    }
+    .joinCheckBox-con .inner-jCheckBox >textarea{
+        height: 230px;
+    }
+
+}
+
+
+
+
+

@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Leckerli+One&family=Pacifico&family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    
+}
+
+ol, ul, li{
+    list-style: none;
+}
+
+img{
+    border:0;
+}
+
+a{
+    text-decoration: none;
+    color:#161616;
+}
+/*body, h1, h2, h3, h4, h5, h6, li, p, span, div {font-family:"Montserrat","Nanum Square","NanumSquare", sans-serif !important; }*/
+
+body, h1, h2, h3, h4, h5, h6, li, p, span, div 
+{font-family: 'Noto Sans', sans-serif;}
+/*
+:lang(ko) {font-family:"Nanum Square", sans-serif !important;}
+:lang(en) {font-family:"Noto Sans", sans-serif !important;}*/

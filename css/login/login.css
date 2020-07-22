@@ -1,0 +1,154 @@
+@charset "utf-8";
+
+.login-pop{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    background: rgba(0,0,0,0.5);
+    display: none;
+}
+
+.login-pop .inner-login{
+    width: 480px;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    margin-left: -240px;
+    top: 50%;
+    margin-top: -250px;
+    background: linear-gradient(120deg, #ff0c28,#7200ff);
+    border-radius: 20px;
+    padding: 40px 30px;
+    box-sizing: border-box;
+    box-shadow: 1px 2px 10px #000;
+}
+
+.login-pop .inner-login span.login-close{
+    position: absolute;
+    right: 25px;
+    top: 15px;
+    cursor: pointer;
+    color: rgba(255,255,255,0.9);
+    font-weight: bold;
+}
+
+.login-pop .inner-login span.login-close:hover{
+    transform: rotate(360deg);
+    transition: all 0.5s;
+}
+
+.login-pop .inner-login p.loginLogo{
+    color: rgba(255,255,255,0.7);
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+
+.login-pop .inner-login h1.loginTitle{
+    text-align: center;
+    color: #fff;
+    font-family:"Nanum Square", sans-serif;
+    letter-spacing: 1px;
+    font-size: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.login-pop .inner-login form{
+   margin: 20px 0 0 0;
+}
+
+.login-pop .inner-login form >ul >li{
+    padding: 5px 20px;
+    box-sizing: border-box;
+}
+
+.login-pop .inner-login form >ul >li input{
+    width: 100%;
+    height: 40px;
+    box-sizing: border-box;
+    border: 0; 
+}
+
+.login-pop .inner-login form >ul >li input[type=text],[type=password]{
+    text-indent: 10px;
+    color: #ff0c28;
+    outline-color:dodgerblue;
+}
+
+.login-pop .inner-login form >ul >li input[type=button]{
+    border: 0;
+    height: 45px;
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+    cursor: pointer;
+    outline-color:dodgerblue;
+}
+
+.login-pop .inner-login form >ul >li input[type=button]:hover{
+    background: rgba(255,255,255,0.8);
+    color: #000;
+    font-weight: bold;
+    transition: all 0.5s;
+}
+
+.login-pop .inner-login form >ul >li >a.joinBtn{
+    border: 0;
+    height: 45px;
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    line-height: 45px;
+    font-size: 13px;
+}
+
+.login-pop .inner-login form >ul >li >a.joinBtn:hover{
+    background: rgba(255,255,255,0.8);
+    color: #000;
+    font-weight: bold;
+    transition: all 0.5s;
+}
+
+.login-pop .inner-login form >ul >li >a.nLogin{
+    display: block;
+    height: 45px;
+    width: 100%;
+    text-align: center;
+    line-height: 45px;
+    background: #19ce60;
+    color: #fff;
+    font-weight: bold;
+}
+
+.login-pop .inner-login form >ul >li >a.nLogin img{
+    width: 60px;
+    display: inline-block;
+    padding: 0 5px 0 0 ;
+}
+
+.login-pop .inner-login form >ul >li.loginFind{
+    font-size: 12px;
+    text-align: center;
+    padding: 5px 0 0 0;
+}
+
+.login-pop .inner-login form >ul >li.loginFind a{
+    color: #fff;
+}
+
+.login-pop .inner-login form >ul >li.loginFind a:hover{
+    text-decoration: underline;
+}
+
+.login-pop .inner-login form >ul >li.loginFind a:nth-child(1)::after{
+    content: "|";
+    color: #fff;
+    display: inline-block;
+    padding: 0 5px;
+}

@@ -1,0 +1,203 @@
+@charset "utf-8";
+
+.footer{
+    width: 100%;
+    height: auto;
+    background: #f2f2f2;
+    padding-left: 225px;
+    padding-bottom: 85px;
+    box-sizing: border-box;
+    display: block;
+}
+
+.footer .inner-foot{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    font-size: 13px;
+}
+
+.footer .inner-foot .tFcon{
+    width: 100%;
+    border: 1px solid rgba(30,30,30,0.05);
+    height: auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.footer .inner-foot .tFcon::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.footer .inner-foot .tFcon .notice{
+    width: 400px;
+    height: 55px;
+    padding: 15px 0;
+    box-sizing: border-box;
+    float: left;
+}
+
+.footer .inner-foot .tFcon .notice::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.footer .inner-foot .tFcon .notice span{
+    color: #939393;
+    display: block;
+    float: left;
+}
+
+.footer .inner-foot .tFcon .notice .noticeTxt{
+    height: 20px;
+    overflow: hidden;
+}
+
+.footer .inner-foot .tFcon .notice .noticeTxt a{
+    text-indent: 10px;
+    display: block;
+    height: 20px;
+}
+
+.footer .inner-foot .tFcon .sns{
+    width: 90px;
+    height: 55px;
+    float: right;
+}
+
+.footer .inner-foot .tFcon .sns>ul>li{
+    width: 30px;
+    height: auto;
+    float: left;
+}
+
+.footer .inner-foot .tFcon .sns>ul>li img{
+    width: 25px;
+    height: 25px;
+    display: block;
+    margin: 15px auto 0;
+}
+
+.footer .inner-foot .mFcon{
+    width: 100%;
+    height: auto;
+    padding: 21px 0;
+    padding: 15px;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgba(30,30,30,0.05);
+}
+
+.footer .inner-foot .mFcon >span{
+    color: #666;
+    line-height: 20px;
+}
+
+.footer .inner-foot .mFcon .mFcon-info{
+    width: 100%;
+    height: auto;
+}
+
+.footer .inner-foot .mFcon .mFcon-info::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.footer .inner-foot .mFcon .mFcon-info ul>li{
+    float: left;
+    line-height: 20px;
+}
+
+.footer .inner-foot .mFcon .mFcon-info ul>li span{
+    color: #666;
+    display: block;
+    float: left;
+}
+
+.footer .inner-foot .mFcon .mFcon-info ul>li p{
+    display: block;
+    float: left;
+    text-indent:10px;
+    padding-right: 20px;
+    color: #555;
+}
+
+.footer .inner-foot .mFcon .mFcon-address{
+    width: 100%;
+    height: auto;
+}
+
+.footer .inner-foot .mFcon .mFcon-address::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.footer .inner-foot .mFcon .mFcon-address ul >li{
+    float: left;
+    line-height: 20px;
+}
+
+.footer .inner-foot .mFcon .mFcon-address ul>li span{
+    color: #666;
+    display: block;
+    float: left;
+}
+
+.footer .inner-foot .mFcon .mFcon-address ul>li p{
+    display: block;
+    float: left;
+    text-indent:10px;
+    padding-right: 20px;
+    color: #555;
+}
+
+.footer .inner-foot .bFcon{
+    width: 100%;
+    height: auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.footer .inner-foot .bFcon .bFcon-info::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.footer .inner-foot .bFcon .bFcon-info{
+    padding: 21px 0;
+}
+
+.footer .inner-foot .bFcon .bFcon-info >ul>li{
+    float: left;
+    line-height: 20px;
+}
+
+.footer .inner-foot .bFcon .bFcon-info >ul>li.toktok::before{
+    content: "";
+    background: url(../../img/commons/footer/foot-toktok.png) no-repeat;
+    width: 16px;
+    height: 16px;
+    background-size: 12px;
+    display: inline-block;
+    background-position: 0 4px;
+    padding-right: 2px;
+}
+
+.footer .inner-foot .bFcon .bFcon-info >ul>li::after{
+    content: "|";
+    padding: 0 10px;
+    color: #ccc;
+}
+
+.footer .inner-foot .bFcon .bFcon-info >ul>li a{
+    color: #939393;
+}
+
+.footer .inner-foot .bFcon .bFcon-info >ul>li.point{
+    font-weight: bold;
+}

@@ -1,0 +1,272 @@
+@charset "utf-8";
+
+.join-pop{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 15;
+    background: rgba(0,0,0,0.5);
+    display: none;
+}
+
+.join-pop .inner-join{
+    width: 480px;
+    height: 700px;
+    position: absolute;
+    right:-100%;
+    margin-right: -240px;
+    top: 50%;
+    margin-top: -350px;
+    -webkit-background: linear-gradient(30deg, #ff0c28, #7200ff);
+    -o-background: linear-gradient(30deg, #ff0c28, #7200ff);
+    background: linear-gradient(120deg, #ff0c28, #7200ff);
+    border-radius: 20px;
+    padding: 30px 30px;
+    box-sizing: border-box;
+    box-shadow: 1px 2px 10px #000;
+}
+
+.join-pop .inner-join span.join-close{
+    position: absolute;
+    right: 25px;
+    top: 15px;
+    cursor: pointer;
+    color: rgba(255,255,255,0.9);
+    font-weight: bold;
+}
+
+.join-pop .inner-join span.join-close:hover{
+    transform: rotate(360deg);
+    transition: all 0.5s;
+}
+
+.join-pop .inner-join p.joinLogo{
+    color: rgba(255,255,255,0.7);
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+
+.join-pop .inner-join h1.joinTitle{
+    text-align: center;
+    color: #fff;
+    font-family:"Nanum Square", sans-serif;
+    letter-spacing: 1px;
+    font-size: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.join-pop .inner-join span.joinTxt{
+    color: #fff8;
+    display: block;
+    font-size: 12px;
+    text-align: right;
+    padding: 10px 20px 0;
+    box-sizing: border-box;
+}
+
+.join-pop .inner-join form{
+    margin: 10px 0 0 0;
+}
+
+.join-pop .inner-join form >ul >li{
+    padding: 5px 20px;
+    box-sizing: border-box;
+}
+
+.join-pop .inner-join form >ul >li input[type=text],[type=password]{
+    width: 100%;
+    height: 40px;
+    border: 0; 
+    text-indent: 10px;
+    outline-color:dodgerblue;
+    color: #ff0c28;
+}
+
+.join-pop .inner-join form >ul >li >a#userIdCheck{
+    border: 0;
+    height: 45px;
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    line-height: 45px;
+    font-size: 13px;
+}
+
+.join-pop .inner-join form >ul >li >a#userIdCheck:hover{
+    background: rgba(255,2255,255,0.8);
+    color: #000;
+    font-weight: bold;
+    transition: all 0.5s;
+}
+
+.join-pop .inner-join form >ul >li >span.pwCheck{
+    display: block;
+    padding: 5px 0 0 0;
+    color: #fff;
+}
+
+.join-pop .inner-join form >ul >li.userPhone select{
+    width: 31.3333%;
+    height: 38px;
+    border: 0;
+    outline-color:dodgerblue;
+    text-indent: 10px;
+    color: #ff0c28;
+    box-sizing: border-box;
+    padding-bottom: 2px;
+}
+
+.join-pop .inner-join form >ul >li.userPhone >span{
+    color: #fff;
+    display: inline-block;
+    width: 1.7%;
+    padding-right: 1.5%;
+    box-sizing: border-box;
+}
+
+.join-pop .inner-join form >ul >li.userPhone input[type=text]{
+    width: 30.3333%;
+    height: 39px;
+}
+
+.join-pop .inner-join form >ul >li.userGender select{
+    width: 100%;
+    height: 40px;
+    border: 0;
+    outline-color:dodgerblue;
+    text-indent: 10px;
+    color: #ff0c28;
+    box-sizing: border-box;
+    padding-bottom: 2px;
+}
+
+.join-pop .inner-join form >ul >li input[type=button]{
+    width: 100%;
+    border: 0;
+    height: 45px;
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    line-height: 45px;
+    font-size: 13px;
+    outline-color:dodgerblue;
+}
+
+.join-pop .inner-join form >ul >li input[type=button]:hover{
+    background: rgba(255,2255,255,0.8);
+    color: #000;
+    font-weight: bold;
+    transition: all 0.5s;
+}
+
+.join-pop .inner-join form >ul >li.joinCheckBox{
+    color: #fff9;
+    font-size: 13px;
+    padding: 5px 20px;
+}
+
+.join-pop .inner-join form >ul >li.joinCheckBox.EssCheck{
+    color: #fff;
+}
+
+.join-pop .inner-join form >ul >li.joinCheckBox.allCheck{
+    font-weight: bold;
+    color: #fff;
+    margin: 5px 0 0 0;
+}
+
+.join-pop .inner-join form >ul >li.joinCheckBox a{
+    color: #fff9;
+    display: block;
+    float: right;
+    font-size: 12px;
+    
+}
+
+.join-pop .inner-join form >ul >li.joinCheckBox a:hover{
+    text-decoration: underline;
+}
+
+
+/*join이용약관 내용보기 부분!!!!!!!!!!!!1*/
+.joinCheckBox-con{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    background: rgba(0,0,0,0.5);
+    display: none;
+}
+
+.joinCheckBox-con .inner-jCheckBox{
+    width: 480px;
+    height: 700px;
+    position: absolute;
+    right:50%;
+    margin-right: -240px;
+    bottom: -100%;
+    margin-bottom: -350px;
+    background: linear-gradient(120deg, #ff0c28,#7200ff);
+    border-radius: 20px;
+    padding: 20px 30px;
+    box-sizing: border-box;
+    box-shadow: 1px 2px 10px #000;
+}
+
+.joinCheckBox-con .inner-jCheckBox span.jCheckBox-close{
+    position: absolute;
+    right: 25px;
+    top: 15px;
+    cursor: pointer;
+    color: rgba(255,255,255,0.5);
+    font-weight: bold;
+    font-size: 20px;
+    z-index: 20;
+}
+
+.joinCheckBox-con .inner-jCheckBox span.jCheckBox-close:hover{
+    color: rgb(255,255,255);
+    transition: all 0.5s;
+}
+
+.joinCheckBox-con .inner-jCheckBox p.jCheckBoxLogo{
+    color: rgba(255,255,255,0.7);
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 14px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.joinCheckBox-con .inner-jCheckBox span.jCheckBoxTxt{
+    color: #fff;
+    display: block;
+    font-size: 13px;
+    text-align: left;
+    padding: 15px 0 5px 0;
+    box-sizing: border-box;
+}
+
+.joinCheckBox-con .inner-jCheckBox >textarea{
+    width: 100%;
+    height: 40%;
+    font-size: 11px;
+    font-family: "Nanum Square", sans-serif;
+}
+
+
+
+
+

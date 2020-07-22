@@ -1,0 +1,340 @@
+@charset "utf-8";
+
+.player{
+    width: 100%;
+    height: auto;
+    background: rgba(25,25,25,0.97);
+    position: fixed;
+    bottom: 0;
+    z-index: 10;
+}
+
+.player .playerLogin-pop{
+    width: 100%;
+    height: 70px;
+    color: #fff;
+    text-align: center;
+    padding-top: 14px;
+    border: 0px solid #fff;
+    box-sizing: border-box;
+    font-size: 15px;
+    background: rgba(255,245,245,0.1) !important;
+    display: none;
+}
+
+.player .playerLogin-pop span.player-close{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.player .playerLogin-pop span.playerLogin a{
+    color:#ff1150;
+}
+
+.player .playerLogin-pop span.playerLogin::after{
+    content: "";
+    background: url(../../img/commons/player/player-popup-more.png) no-repeat;
+    background-size: 8px;
+    width: 22px;
+    height: 22px;
+    background-position: 5px 5px;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.player .playerBar{
+    width: 0;
+    height: 5px;
+    display: none;
+    background: #ff1150;
+}
+
+.player .inner-player{
+    width: 100%;
+    max-width: 1920px;
+    height: auto;
+}
+
+.player .inner-player::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+/*player song Info!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+.player .inner-player .songInfo{
+    width: 310px;
+    height: 45px;
+    margin: 17.5px 0 0 17.5px;
+    float: left;
+}
+
+.player .inner-player .songInfo >a.albumImg{
+    width: 45px;
+    height: 45px;
+    float: left;
+    margin-right: 10px;
+}
+
+.player .inner-player .songInfo >a.albumImg img{
+    width: 45px;
+    display: block;
+}
+
+.player .inner-player .songInfo .info-area{
+    width: auto;
+    max-width: 135px;
+    height: 45px;
+    float: left;
+}
+
+.player .inner-player .songInfo .info-area span.song-title{
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    display: block;
+    line-height: 25px;
+}
+
+.player .inner-player .songInfo .info-area span.song-artist{
+    font-size: 12px;
+    display: block;
+    color: #747474;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.player .inner-player .songInfo .info-icon{
+    width: 114px;
+    height: 45px;
+    float: left;
+    display: none;
+}
+
+.player .inner-player .songInfo .info-icon >a{
+    display: block;
+    float: left;
+    width: 38px;
+    height: 38px;
+    margin: 3.5px 0;
+}
+
+.player .inner-player .songInfo .info-icon >a.songSave::after{
+    content: "";
+    width: 38px;
+    height: 38px;
+    background: url(../../img/commons/player/player_info-save-icon.png) no-repeat;
+    background-size: 22px;
+    display: inline-block;
+    background-position: 8px
+}
+
+.player .inner-player .songInfo .info-icon >a.songLyrics::after{
+    content: "";
+    width: 38px;
+    height: 38px;
+    background: url(../../img/commons/player/player_info-lyrics-icon.png) no-repeat;
+    background-size: 22px;
+    display: inline-block;
+    background-position: 8px
+}
+
+.player .inner-player .songInfo .info-icon >a.songIntro::after{
+    content: "";
+    width: 38px;
+    height: 38px;
+    background: url(../../img/commons/player/player_info-songIntro-icon.png) no-repeat;
+    background-size: 22px;
+    display: inline-block;
+    background-position: 7px
+}
+
+/*player control!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+.player .inner-player .songControl{
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    margin: 17.5px 0;
+    position: absolute;
+    left: 50%;
+    margin-left: -400px;
+    
+}
+
+.player .inner-player .songControl .control-area{
+    width: 100%;
+    max-width: 300px;
+    height: 45px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.player .inner-player .songControl .control-area >a.shuffle{
+    width: 56px;
+    height: 45px;
+    display: block;
+    box-sizing: border-box;
+    float: left;
+    padding: 7.5px 13px;
+}
+
+.player .inner-player .songControl .control-area >a.shuffle::after{
+    content: "";
+    background: url(../../img/commons/player/player_control-shuffle-icon.png) no-repeat;
+    background-size: 26px;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background-size: 18px;
+    background-position: center;
+}
+
+.player .inner-player .songControl .control-area >a.loop{
+    width: 56px;
+    height: 45px;
+    display: block;
+    box-sizing: border-box;
+    float: right;
+    padding: 7.5px 13px;
+}
+
+.player .inner-player .songControl .control-area >a.loop::after{
+    content: "";
+    background: url(../../img/commons/player/player_control-loop-icon.png) no-repeat;
+    background-size: 26px;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background-size: 18px;
+    background-position: center;
+}
+
+.player .inner-player .songControl .control-area .control-btn{
+    width: 168px;
+    height: 45px;
+    margin: 0 auto;    
+}
+
+.player .inner-player .songControl .control-area .control-btn::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.player .inner-player .songControl .control-area .control-btn a{
+    width: 56px;
+    height: 45px;
+    display: block;
+    float: left;
+    padding: 5.5px 13px;
+    box-sizing: border-box;
+}
+
+
+.player .inner-player .songControl .control-area .control-btn a.playerPrev::after{
+    content: "";
+    background: url(../../img/commons/player/player_control-prev-icon.png) no-repeat;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background-size: 15px;
+    background-position: center;
+}
+
+.player .inner-player .songControl .control-area .control-btn >a.playerPlay{
+    content: "";
+    background: url(../../img/commons/player/player_control-play-icon.png) no-repeat;
+    background-size: 22px;
+    background-position: center;
+    display: inline-block;
+}
+
+
+.player .inner-player .songControl .control-area .control-btn a.playerNext::after{
+    content: "";
+    background: url(../../img/commons/player/player_control-next-icon.png) no-repeat;
+    background-size: 26px;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background-size: 15px;
+    background-position: center;
+}
+
+.player .inner-player .playerList{
+    width: 80px;
+    height: 80px;
+    float: right;
+    border-left: 1px solid rgba(255,255,255,0.15);
+}
+
+.player .inner-player .playerList >a{
+    width: 40px;
+    height: 40px;
+    display: block;
+    margin: 20px auto 0;
+}
+
+.player .inner-player .playerList >a::after{
+    width: 40px;
+    height: 40px;
+    content: "";
+    background: url(../../img/commons/player/player_palyList-icon.png) no-repeat;
+    background-size: 25px;
+    display: inline-block;
+    background-position: center;
+}
+
+/*player songTime!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+.player .inner-player .songTime{
+    width: auto;
+    height: 45px;
+    float: right;
+    margin: 17.5px 0;
+    font-size: 12px;
+    line-height: 45px;
+}
+
+.player .inner-player .songTime span.nowTime::after{
+    content: " /"
+}
+
+.player .inner-player .songTime span.nowTime{
+    color: #bcbcbc;
+}
+
+.player .inner-player .songTime span.totalTime{
+    color: #747474;
+}
+
+.player .inner-player .volume{
+    width: 170px;
+    height: 45px;
+    float: right;
+    margin: 17.5px 0;
+}
+
+.player .inner-player .volume .volumeBar{
+    width: 100px;
+    height: 5px;
+    background: #bcbcbc;
+    border-radius: 10px;
+    float: right;
+    margin: 20px 20px 20px 0;
+}
+
+.player .inner-player .volume::before{
+    content: "";
+    background: url(../../img/commons/player/player_volume-icon.png) no-repeat;
+    background-size: 17px;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-position: center;
+    margin: 12.5px 5px 0 20px;
+}
+
