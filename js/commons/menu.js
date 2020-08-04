@@ -84,3 +84,22 @@ gnbLi.eq(4).hover(
         });
     }
 );
+
+//모바일사이즈 menu클릭시 player사라지고 menu 나타내기
+$('.inner-header .menu').on('click',function(){
+    $('.header .rwdMenu').fadeIn();
+    $('.player').fadeOut(500);
+});
+
+//모바일사이즈 menu-close클릭시 menu 사라지고 player 나타내기
+$('span.rwdMenu-close').on('click',function(){
+    $('.header .rwdMenu').fadeOut();
+    $('.player').fadeIn(100);
+})
+
+//모바일사이즈 menu>login클릭시 menu사라지고 login-pop 나타내기
+var rwdLogin=$('.rwd-bMenu>ul>li.rwdLogin');
+rwdLogin.on('click',function(){
+    $('.header .rwdMenu').fadeOut();
+    $('.login-pop').fadeIn(500);
+});
