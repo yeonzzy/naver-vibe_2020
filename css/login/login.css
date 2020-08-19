@@ -19,7 +19,9 @@
     margin-left: -240px;
     top: 50%;
     margin-top: -250px;
-    background: linear-gradient(120deg, #ff0c28,#7200ff);
+    -webkit-background: linear-gradient(-120deg, #833ab4, #fd1d1d, #fcb045);
+    -o-background: linear-gradient(-120deg, #833ab4, #fd1d1d, #fcb045);
+    background: linear-gradient(-120deg, #833ab4, #fd1d1d, #fcb045);
     border-radius: 20px;
     padding: 40px 30px;
     box-sizing: border-box;
