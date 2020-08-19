@@ -19,9 +19,9 @@
     margin-right: -240px;
     top: 50%;
     margin-top: -350px;
-    -webkit-background: linear-gradient(30deg, #ff0c28, #7200ff);
-    -o-background: linear-gradient(30deg, #ff0c28, #7200ff);
-    background: linear-gradient(120deg, #ff0c28, #7200ff);
+    -webkit-background: linear-gradient(-120deg, #833ab4, #fd1d1d, #fcb045);
+    -o-background: linear-gradient(-120deg, #833ab4, #fd1d1d, #fcb045);
+    background: linear-gradient(-120deg, #833ab4, #fd1d1d, #fcb045);
     border-radius: 20px;
     padding: 30px 30px;
     box-sizing: border-box;
@@ -217,7 +217,9 @@
     margin-right: -240px;
     bottom: -100%;
     margin-bottom: -350px;
-    background: linear-gradient(120deg, #ff0c28,#7200ff);
+    -webkit-background: linear-gradient(-120deg, #833ab4, #fd1d1d, #fcb045);
+    -o-background: linear-gradient(-120deg, #833ab4, #fd1d1d, #fcb045);
+    background: linear-gradient(-120deg, #833ab4, #fd1d1d, #fcb045);
     border-radius: 20px;
     padding: 20px 30px;
     box-sizing: border-box;

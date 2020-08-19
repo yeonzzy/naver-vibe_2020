@@ -1,3 +1,17 @@
+/*gnb 로그인, palyer>previewTxt>player Login a클릭 시*/
+$("span.login-txt").on("click", loginShow);
+$("span.playerLogin a").on("click", loginShow);
+
+function loginShow() {
+  $(".login-pop").css({display:'block'});
+}
+/*login-pop-close 클릭 시 */
+$("span.login-close").on("click", function () {
+  $(".login-pop").fadeOut();
+});
+
+
+/*login 유효성검사*/
 var loginOk = document.querySelector("#loginOk");
 var loginForm = document.querySelector("#loginForm");
 loginOk.addEventListener("click", loginOkFunc);
@@ -31,14 +45,3 @@ function loginOkFunc() {
   alert("로그인 성공!");
   loginForm.submit();
 }
-
-$("span.login-txt").on("click", loginShow);
-$("span.playerLogin a").on("click", loginShow);
-
-function loginShow() {
-  $(".login-pop").fadeIn(500);
-}
-
-$("span.login-close").on("click", function () {
-  $(".login-pop").fadeOut();
-});

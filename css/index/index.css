@@ -743,7 +743,7 @@
     max-width: 1200px;
     height: 360px;
     margin: 0 auto;
-    background: linear-gradient(100deg, #ff3a4e, #7e4cff);
+    background: linear-gradient(to left, #833ab4, #fd1d1d, #fcb045);
     text-align: center;
 }
 
