@@ -261,7 +261,7 @@
 .magBanner .inner-magBanner .magBanner-parent .magBanner-con >ul >li .magSub>ul>li.update p::after{
     width: 8px;
     height: 8px;
-    background: #ff0050;
+    background: #fc8138;
     border-radius: 50%;
     display: inline-block;
     content: "";
@@ -662,7 +662,7 @@
 .songBanner .inner-songBanner .songBanner-parent .songBanner-con >ul >li .songSub>ul>li a.update::after{
     width: 8px;
     height: 8px;
-    background: #ff0050;
+    background: #fc8138;
     border-radius: 50%;
     display: inline-block;
     content: "";
@@ -743,7 +743,7 @@
     max-width: 1200px;
     height: 360px;
     margin: 0 auto;
-    background: linear-gradient(to left, #833ab4, #fd1d1d, #fcb045);
+    background: linear-gradient(-60deg, #833ab4, #fd1d1d, #fcb045);
     text-align: center;
 }
 

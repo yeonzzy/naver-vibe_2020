@@ -77,7 +77,7 @@
 }
 
 .header .inner-header .search-bar input:focus{
-    color: #ff0050;
+    color: #fd1d1d;
 }
 
 .header .inner-header .search-bar span.close{
@@ -200,7 +200,7 @@
 }
 
 .header .side-bar .m-header .gnb>ul>li span.gnbChoice{
-    color: #ff0050;
+    color: #fd1d1d;
     text-indent: 10px;
     font-weight: bold;
 }
