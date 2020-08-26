@@ -47,7 +47,6 @@
 .player .playerBar{
     width: 0;
     height: 5px;
-    display: none;
     background: #ff1150;
 }
 
