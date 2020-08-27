@@ -760,6 +760,84 @@
             </div>
         </div>
         <script type="text/javascript" src="js/commons/player.js"></script>
+        <script>
+            let resetBar = 0;
+            let playKey = 0;
+
+            $('span.play').on('click', playerControl);
+
+            function playerControl() {
+                $('.playerBar').css({
+                    display: 'block'
+                });
+                $('.playerBar').css({
+                    width: '0'
+                });
+
+                $('a.playerPlay').css({
+                    background: 'url(img/commons/player/player_control-stop-icon.png) no-repeat',
+                    backgroundSize: '18px',
+                    backgroundPosition: 'center'
+                });
+
+                playKey = 0;
+                playerOnFunc();
+
+            }
+
+
+            //contents의 재생버튼 클릭 시, 레이어 재생 활성화
+            $('a.playerPlay').on('click', playerOnFunc);
+
+            function playerOnFunc() {
+
+                console.log(playKey);
+
+                var playerImgSrc = $('a.albumImg').find('img').attr('src');
+                if (playerImgSrc == 'img/commons/player/player_album-img-none.png') {
+                    alert('재생될 음악이 없습니다. 음악을 선택해주세요');
+                    return false;
+                    //                    playKey++; 
+                }
+
+                //재생될때
+                if (playKey == 0) {
+                    $(this).css({
+                        background: 'url(img/commons/player/player_control-stop-icon.png) no-repeat',
+                        backgroundSize: '18px',
+                        backgroundPosition: 'center'
+                    });
+                    $('.playerBar').css({
+                        display: 'block'
+                    });
+                    $('.playerBar').animate({
+                        width: '100%'
+                    }, 30000);
+                    $('.playerLogin-pop').fadeIn();
+
+                    playKey++;
+
+                }
+                //일시정지
+                else if (playKey == 1) {
+                    console.log(playKey);
+
+                    $('.playerBar').stop().animate();
+                    $(this).css({
+                        background: 'url(img/commons/player/player_control-play-icon.png) no-repeat',
+                        backgroundSize: '22px',
+                        backgroundPosition: 'center'
+                    });
+                    playKey = 0;
+                    console.log(playKey);
+                }
+            }
+
+            $('span.player-close').on('click', function() {
+                $('.playerLogin-pop').fadeOut(100);
+            });
+            
+        </script>
 
         <!--login 부분!!!!!!!!!!!!!!!!-->
         <div class="login-pop">
