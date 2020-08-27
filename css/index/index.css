@@ -16,6 +16,7 @@
     width: 100%;
     padding-left: 225px;
     box-sizing: border-box;
+    transition: .5s;
 }
 
 /*nav!!!!!!!!!!!!!!!!!!*/

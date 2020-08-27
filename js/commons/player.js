@@ -2,6 +2,7 @@
 var playerInfo = $('a.albumImg');
 
 $('.magAlbum span.play').on('click', m_playerOnFunc);
+
 function m_playerOnFunc() {
     let m_thisParent = $(this).parent().parent();
     let m_key = m_thisParent.attr('data-index');
@@ -16,6 +17,7 @@ function m_playerOnFunc() {
 
 //재생버튼 클릭 시, 플레이어로 가져오기 (2) : "section 2 - news"
 $('.newsImg span.play').on('click', n_playerOnFunc);
+
 function n_playerOnFunc() {
     let n_thisParent = $(this).parent().parent();
     let n_key = n_thisParent.attr('data-index');
@@ -32,6 +34,7 @@ function n_playerOnFunc() {
 
 //재생버튼 클릭 시, 플레이어로 가져오기 (3) : "section 3 - song"
 $('.songAlbum span.play').on('click', s_playerOnFunc);
+
 function s_playerOnFunc() {
     let s_thisParent = $(this).parent().parent();
     let s_key = s_thisParent.attr('data-index');
@@ -41,34 +44,63 @@ function s_playerOnFunc() {
     let playerBg3 = sSubBg[s_key].substring(4, sSubBg[s_key].length - 15);
 
     playerInfo.find('img').attr('src', playerBg3);
+
 }
 
-var playKey=0;
+let resetBar = 0;
+let playKey = 0;
 
-$('span.play').on('click', spanPlayFunc);
-function spanPlayFunc(){
-    //나말고 다른 span.play를 눌렀을 때
-    var play_pIndex=$(this).parent().parent().index();
-    console.log(play_pIndex);
-    if(play_pIndex != $('span.play').parent().parent().index()){
-        alert('다릅니다')
-        // $('.playerBar').css({display:'none'});
+$('span.play').on('click', playerControl);
+
+function playerControl() {
+    $('.playerBar').css({
+        display: 'block'
+    });
+    $('.playerBar').css({
+        width: '0'
+    });
+
+    $('a.playerPlay').css({
+        background: 'url(img/commons/player/player_control-stop-icon.png) no-repeat',
+        backgroundSize: '18px',
+        backgroundPosition: 'center'
+    });
+
+    playKey = 0;
+    playerOnFunc();
+
+}
+
+
+var volkey=0;
+//contents의 재생버튼 클릭 시, 레이어 재생 활성화
+$('a.playerPlay').on('click', playerOnFunc);
+
+function playerOnFunc() {
+
+    console.log(playKey);
+
+    var playerImgSrc = $('a.albumImg').find('img').attr('src');
+    if (playerImgSrc == 'img/commons/player/player_album-img-none.png') {
+        alert('재생될 음악이 없습니다. 음악을 선택해주세요');
+        return false;
+        //                    playKey++; 
     }
 
-    //재생될 때 
-    if(playKey==0){
-        console.log('spanPlay:'+playKey);
-        //1. playerBar
-        $('.playerBar').animate({
-            width:'100%'
-        });
-        $('.playerBar').css({'transition':'60.0s'});
-        //2. player: icon->stop
-        $('a.playerPlay').css({
+    //재생될때
+    if (playKey == 0) {
+        $(this).css({
             background: 'url(img/commons/player/player_control-stop-icon.png) no-repeat',
             backgroundSize: '18px',
             backgroundPosition: 'center'
         });
+        $('.playerBar').css({
+            display: 'block'
+        });
+        $('.playerBar').animate({
+            width: '100%'
+        }, 30000);
+        $('.playerLogin-pop').fadeIn();
         //3. player: volumeBar
         $('.volumeBar').css({
             background: '#bcbcbc'
@@ -82,7 +114,23 @@ function spanPlayFunc(){
         //4. player: time
         $('.songTime span.totalTime').text('01:00');
         $('.playerLogin-pop').fadeIn();
-        
+
+        playKey++;
+        volkey++;
+
+    }
+    //일시정지
+    else if (playKey == 1) {
+        console.log(playKey);
+
+        $('.playerBar').stop().animate();
+        $(this).css({
+            background: 'url(img/commons/player/player_control-play-icon.png) no-repeat',
+            backgroundSize: '22px',
+            backgroundPosition: 'center'
+        });
+        playKey = 0;
+        console.log(playKey);
     }
 }
 
@@ -91,7 +139,7 @@ $('span.player-close').on('click', function() {
 });
 
 //volumeIcon 클릭 시 이미지 교체
-var volkey=0;
+
 $('.volumeIcon').on('click', volOnOffFunc);
 function volOnOffFunc(){
     //볼륨활성화 상태일 때 == ON

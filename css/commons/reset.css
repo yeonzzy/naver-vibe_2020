@@ -37,9 +37,6 @@ a{
     color:#161616;
 }
 
-div {
-    transition: .5s;
-}
 /*body, h1, h2, h3, h4, h5, h6, li, p, span, div {font-family:"Montserrat","Nanum Square","NanumSquare", sans-serif !important; }*/
 
 body, h1, h2, h3, h4, h5, h6, li, p, span, div 
