@@ -4,7 +4,6 @@
 @import url(../commons/player.css);
 @import url(../login/login.css);
 @import url(../join/join.css);
-/*@import url(../commons/media.css);*/
 
 #wrap{
     width: 100%;
@@ -833,7 +832,8 @@
     background-size: 2500px;
 }
 
-
+/*미디어쿼리!!!!*/
+/*태블릿 사이즈!!!!!!!!!!!!!!!!!!*/
 @media only screen and (min-width:768px) and (max-width:1024px){
     .contents .nav{
         padding: 0;
@@ -935,6 +935,7 @@
     }
 }
 
+/*모바일 사이즈!!!!!!!!!!!!!!!!!!*/
 @media only screen and (max-width:767px){
     .header{
         width: 100%;
