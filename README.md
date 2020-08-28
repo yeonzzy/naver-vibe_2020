@@ -1,10 +1,12 @@
-### READM
+### README
 [nave-vibe :-)](yeonzzy.github.io/naver-vibe_2020)
 
 _developed by_ **yeonji**
 
 ### About project
-
+```
+⭐ 반응형 : 데스크탑, 태블릿, 모바일
+```
 - 네이버의 음악 플랫폼 사이트 VIBE 입니다.
 - 기존의 디자인을 가지고 구현하였습니다.
 - 플레이어 기능 구현 중에 있습니다🙂
