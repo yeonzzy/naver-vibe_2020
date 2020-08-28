@@ -1,4 +1,4 @@
-### READM
+### README
 [nave-vibe :-)](yeonzzy.github.io/naver-vibe_2020)
 
 _developed by_ **yeonji**
