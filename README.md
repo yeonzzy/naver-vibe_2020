@@ -1,5 +1,5 @@
 ### README
-[naver-vibe :-)](yeonzzy.github.io/naver-vibe_2020)
+[naver-vibe :-)](https::/yeonzzy.github.io/naver-vibe_2020)
 
 _developed by_ **yeonji**
 
